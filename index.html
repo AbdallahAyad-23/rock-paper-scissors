@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>ROCK | PAPER | SCISSORS</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="scoreboard">
+        <h1 class="scoreboard__title">
+          <span>ROCK</span><span>PAPER</span><span>SCISSORS</span>
+        </h1>
+        <div class="scoreboard__score">
+          <p class="scoreboard__text">SCORE</p>
+          <p class="scoreboard__result"></p>
+        </div>
+      </div>
+      <div class="main">
+        <button data-pick="paper" class="main__pick main__pick--paper"></button>
+        <button data-pick="rock" class="main__pick main__pick--rock"></button>
+        <button
+          data-pick="scissors"
+          class="main__pick main__pick--scissors"
+        ></button>
+        <div class="main__final">
+          <h1 class="main__title main__title--player">YOU PICKED</h1>
+          <h1 class="main__title main__title--computer">THE HOUSE PICKED</h1>
+          <div class="main__result">
+            <h1></h1>
+            <button class="btn playbtn">PLAY AGAIN</button>
+            <button class="main__pick main__pick--computer"></button>
+          </div>
+        </div>
+      </div>
+      <button class="btn rulesbtn btn--rounded">RULES</button>
+    </div>
+    <div class="modal">
+      <div class="modal__backdrop"></div>
+      <div class="modal__rules">
+        <h1 class="modal__title">RULES</h1>
+        <div class="modal__img"></div>
+        <button class="btn modal__close">X</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
