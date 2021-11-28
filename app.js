@@ -58,7 +58,7 @@
         mainResult.children[0].textContent = "DRAW";
       }
       mainFinal.classList.add("main__final--show");
-    }, 3000);
+    }, 300);
   };
 
   const playAgain = () => {
